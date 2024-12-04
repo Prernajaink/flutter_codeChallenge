@@ -54,6 +54,7 @@ Future<void> fetchList() async {
 
             if (variants != null && variants.isNotEmpty) {
               var variant = variants[0];
+
               var originalPrice = variant['originalPrice'];
               var currentPrice = variant['currentPrice'];
               var image = variant['thumbnail'] ?? "assets/images/logo.jpg";
